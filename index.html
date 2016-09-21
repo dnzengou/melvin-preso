@@ -3,14 +3,30 @@
 
 	<head>
 		<meta charset="utf-8">
-
-		<title>Webcam-based gesture recognition with reveal.js</title>
-
-		<meta name="description" content="Webcam-based gesture recognition with reveal.js">
-		<meta name="author" content="William Wu (reveal.js by Hakim El Hattab)">
-
+		<meta charset="utf-8">
+		<title>Melvin - the bot </title>
+		<meta name="description" content="Melvin - Intelligent and caring bot that understands">
+		<meta name="author" content="desireyavro">
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+    <!-- ===========================
+    FAVICONS
+    =========================== -->
+
+<link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="img/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="img/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="img/favicons/manifest.json">
+<link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="theme-color" content="#ffffff">
+
+    <!-- ===========================
+    CSS
+    =========================== -->
+
+        <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
 
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/default.css" id="theme">
@@ -26,228 +42,272 @@
 		<!--[if lt IE 9]>
 		<script src="lib/js/html5shiv.js"></script>
 		<![endif]-->
+
+        <!-- script -->
+		<style type="text/css">
+			.reveal div.listsmall {
+				margin-left: 10px;
+				display: inline-block;
+				font-size: 0.6em;
+			}
+			.reveal .fullwidth, .reveal .fullwidth code {
+				width: 100%;
+			}
+		</style>
+        <!-- end script -->
+        
 	</head>
 
 	<body>
-		<a href="https://github.com/willy-vvu/reveal.js" style="position:fixed;z-index:1000;left:0;top:0;"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_left_gray_6d6d6d.png" alt="Fork me on GitHub"></a>
-		<a href="http://www.chromeexperiments.com/detail/gesture-based-revealjs/" style="position:fixed;z-index:1000;left:20px;bottom:20px;"><img src="badge.jpg" alt="See my Experiment on ChromeExperiments.com" /></a>
 		<div class="reveal">
 
 			<!-- Any section element inside of this container is displayed as a slide -->
 <div class="slides">
-    <section>
-        <section>
-            <h1>What is this?</h1>
-            <div>This is what I got when I combined&nbsp;<b>webcam-based gesture recognition</b> with Hakim El Hattab's <i>reveal.js.</i>
-        </div>
-        <div>It took me a while to write and fine tune the detection algorithms. Even then, the algorithms are only about 80% accurate. You get the gist of it though:&nbsp;</div>
-        <div>
-            <u>A flick of the hand&nbsp;</u>in mid-air changes the slide.</div>
-            <p>
-            <u>A two hand flick up or down</u>&nbsp;activates the slide overview.</p>
-            <p>Tips and troubleshooting in the slides below (you can still use the keyboard or reveal.js's built in controls)</p>
-</section>
-            <section>
-                <h2>USAGE TIPS</h2>
-                <div>(Troubleshooting is in the slide below this one)</div>
-                <div>
-                    <div style="">
-                        <ul>
-                            <li>The detection algorithm can determine the amount and position of motion. It will only change the slide if your amount of motion exceeds a threshold.</li>
-                            <li>Try to keep the rest of your body still.</li>
-                            <li>Your hand should preferably come within two to three feet away from the camera.</li>
-                            <li>Gestures should be performed with open palms facing the camera.</li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-            <section>
-                <h2>Troubleshooting</h2>
-                <div>
-                    <li style="">You need a webcam. You're sunk if you don't have one.</li>
-                    <li style="">If you're not viewing this in Google Chrome, please do.</li>
-                    <li style="">If you're using Chrome, you should get a message asking to access your webcam. Hit Allow.</li>
-                    <li style="">If you aren't getting that message, refresh.</li>
-                    <li style="">If refreshing doesn't work, head over to chrome://flags and enable all flags that mention WebRTC. Restart Chrome.</li>
-                    <li style="">If that doesn't work, I don't know what will. You can at least watch a video of this at <a href="http://youtu.be/bXF68hNPuNo">http://youtu.be/bXF68hNPuNo</a>.</li>
-                </div>
-            </section>
-        </section>
-        <section>
-            <section>
-                <h2>What is REVEAL.JS?</h2>
-<blockquote>A framework for easily creating<br>beautiful presentations using HTML</blockquote>
-<div style="letter-spacing: normal;text-transform: none;">-Hakim El Hattab, the author</div>
-                <div style="letter-spacing: normal;text-transform: none;">
-                    <br>
-                </div>
-                <div style="letter-spacing: normal;text-transform: none;">(go down for details)</div>
-</section>
-                <section>
-                    <h2>REVEAL.JS IS A PRESENTATION FRAMEWORK</h2>
-<p style="letter-spacing: normal;text-transform: none;">It's similar to Prezi or Powerpoint, except it's in HTML5.</p>
-<p style="letter-spacing: normal;text-transform: none;">
-    <br>
-</p>
-<p style="letter-spacing: normal;text-transform: none;">HTML5 is the reason behind Reveal's speed, looks, and</p>
-<p style="letter-spacing: normal;text-transform: none;">COOL 3D TRANSITIONS</p>
-<p style="letter-spacing: normal;text-transform: none;">
-    <br>Beat that, Prezi! (which uses Flash)</p>
+				<section>
+					<h3>Say Hi to Melvin ! </h3>
+					<span>The bot that assists you in case of an incident.</span>
+					<br><img class="trans-image" style="width: 5em; margin-top: 0.4em;" src="img/favicons/android-chrome-192x192.png" />
+					<!--<p style="margin-top: -0.4em;"><a target="_blank" href="https://www.facebook.com/Melvin-Emergency-Bot-978107648905032/"><small>facebook.com/Melvin-Emergency-Bot</small></a></p>-->
+					<p style="margin-top: -0.4em;"></p>
+					<small>
+					<hr>
+						<ul>
+							by <a href="http://desireyavro.com"><span style="color:#6eb246"> E. Désiré Nzengou</span></a>
+							<li>Engineer, co-founder @ <a href="#"> Melvin</a></li>
+							<li><a href="http://www.desireyavro.com"><i class="" aria-hidden="true"> desireyavro.com</i></a> | <a href="http://twitter.com/DesireYavro"><i class="" aria-hidden="true"> @DesireYavro</i></a> | <a ref="https://github.com/dnzengou"><i class="" aria-hidden="true">https://github.com/dnzengou</i></a>
+							</li>
+						</ul>
+					</small>
+					<hr>
+					<small>
+					<p>Wanna check it the online? </p>
+					<ul>
+						<li>facebook <a href="https://www.facebook.com/Melvin-Emergency-Bot-978107648905032/">facebook.com/Melvin-Emergency-Bot</a></li>
+					</ul>
+					</small>
+				</section>
 
+				<section>
+					<h3>Context </h3>
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/UXesqeYxsCA" frameborder="0" allowfullscreen></iframe>
+				</section>
 
-</section>
-                    <section>
-                        <h2>IT'S DIFFERENT.</h2>
-                        <div>
-                            <div style="">In addition to going left and right,&nbsp;</div>
-                            <div style="">you can also go&nbsp;</div>
-                            <div style="">
-                                <br>
-                            </div>
-                            <div style="">up</div>
-                            <div style="">and</div>
-                            <div style="">down.</div>
-                            <div style="">
-                                <br>
-                            </div>
-                            <div style="">There's also a slide overview if you hit Esc.</div>
-                        </div>
-                    </section>
-                </section>
-                <section>
-                    <section>
-                        <h2>What is WebRTC?</h2>
-                        <div>This is a developing standard in webpages to get data from your webcam and your microphone.</div>
-                        <div>
-                            <br>
-                        </div>
-                        <div>Once you have a video feed, you can display, alter, and extract information from it using JavaScript.</div>
-                        <div>
-                            <br>
-                        </div>
-                        <div>Why Chrome? Look below to find out.</div>
-                    </section>
-                    <section>
-                        <h2>Chrome meets Javascript</h2>
-                        <div>Chrome runs Javascript using its wonderfully fast</div>
-                        <div>
-                            <b>V8 Javascript Engine.</b>
-                        </div>
-                        <div>
-                            <br>
-                        </div>
-                        <div>It's remarkably fast. I ran my Tic-tac-toe algorithm on multiple browsers and this is how V8 stacks up:<br>
-                        </div>
-                        <div>
-                            <br>
-                        </div>
-                        <div>
-                            <ol>
-                                <li>Chrome: 199 ms<br>
-                                </li>
-                                <li>FF: 241 ms<br>
-                                </li>
-                                <li>Opera: 439 ms<br>
-                                </li>
-                                <li>IE: &gt;16000 ms<br>
-                                </li>
-                            </ol>
-                        </div>
-                    </section>
-                </section>
-                <section>
-                    <h2>My thought Process</h2>
-                    <div>You can get fabulous presentations and cool 3D transitions with Reveal.js...</div>
-                    <div>You can get user input through the webcam using Web RTC...</div>
-                    <div>
-                        <br>
-                    </div>
-                    <div>
-                        <div>Armed with the two and some spare time, I wrote some signal processing JS (took a while to get the algorithms&nbsp;<i>just</i>&nbsp;right) and overlay interface.</div>
-                        <div>
-                            <br>
-                        </div>
-                        <div>I believe this will be the one aspect of future of computing.</div>
-                    </div>
-                </section>
-                <section>
-                    <section>
-                        <h2>What about Kinect?</h2>
-                        <div>Kinect uses a 3D sensor, which costs around $100.</div>
-                        <div>
-                            <br>
-                        </div>
-                        <div>This uses a webcam, which is built into all newer computers. The cheaper ones come at $20 a pop.</div>
-                        <div>
-                            <br>
-                        </div>
-                        <div>However, there are limitations of webcams as described beneath.</div>
-                    </section>
-                    <section>
-                        <h2>Webcams</h2>
-                        <div>Webcams cannot detect depth.</div>
-                        <div>
-                            <br>
-                        </div>
-                        <div>Since all you get from a webcam is a picture, there is not much data you actually get, compared to a 3D scanner.</div>
-                        <div>
-                            <br>
-                        </div>
-                        <div>The lack of data forces developers to think outside the box and write algorithms to <i>infer</i>&nbsp;what is actually going on without the depth data.</div>
-                    </section>
-                </section>
-                <section>
-                    <h2>The WOW factor</h2>
-                    <div>You can control the computer without touching it!</div>
-                    <div>
-                        <br>
-                    </div>
-                    <div>The computer can distinguish between different gestures!</div>
-                    <div>
-                        <br>
-                    </div>
-                    <div>Who needs touchscreens when you have this?</div>
-                </section>
-                <section>
-                    <h2>More Info</h2>
-                    <div>
-                        <div>Fork me on Github!&nbsp;<a href="https://github.com/willy-vvu/reveal.js" style="">https://github.com/willy-vvu/reveal.js</a>
-                    </div>
-                    <div>
-                        <br>
-                    </div>
-                    <div>My site is at&nbsp;<a href="http://willy.herokuapp.com/">http://willy.herokuapp.com</a>
-                </div>
-            </div>
-        </section>
-    </div>
+				<section>
+					<h3>Do you feel the <span style="color:#6eb246"> Pain </span> of calling the Emergency services ?!</h3>
+					<img class="trans-image" style="width: 10em; margin-top: -0.4em;" src="img/ER-pain.png" />
+					<p style="margin-top: -0.4em;"><a target="_blank" href="http://www.rtbf.be/info/regions/flandre/detail_un-homme-decede-apres-avoir-appele-en-vain-le-112-une-solution-en-vue?id=9334513"><small>source: rtbf.be</small></a></p>
+					<!--<p style="color:#ddd;"><span style="color: #127abe">Get</span> <span style="color:#6eb246">App</span> makes road safety first is everyone’s concern, a well­rested driver is a happy driver. <br>When GetApp feels that you're getting tired, it smoothly fine­tunes cabin environment parameters that matter, temperature and music ;-) -->
+					<small><i>"Notre objectif est que les appels bénéficient d'une réponse dans les cinq secondes."
+						<br>"Lorsque les centrales sont surchargés par des éléments qui se produisent localement, les appels seront déviés vers d'autres centrales de sorte que l'appelant puisse être secouru (..)"</i> - Jan Jambon</small>
+				</section>
+
+				<section>
+					<h3></h3>
+					<ul>
+						<li class="fragment"><strong>11,000,000</strong>:<div class="listsmall"> drivers admitting having had an accident or near accident </div></li>
+						<li class="fragment"><strong> In many countries, a non-emergency number has been introduced</strong><div class="listsmall">to diverting non-urgent calls away from the main force control room</div></li>
+						<li class="fragment"><strong>"Historically I've said call 101 - but life's too short." </strong><div class="listsmall"> - Cambridge City Council councillors Inspector Johnson </div></li>
+						<li class="fragment"><strong>Failure to answer 1+ million calls to 101 in 2013 </strong> <strong>i.e. +25% </strong><div class="listsmall"> from 2012 (UK).</div></li>
+						<li class="fragment"><strong> 10 - 30</strong> %<div class="listsmall"> of all crashes in Europe due to drowsy driving</div>
+						</li>
+							<pre class="fullwidth fragment"><code>source: <small>http://drowsydriving.org/about/facts-and-stats/</small></code></pre>
+					</ul>
+				</section>
+
+				<section>
+					<br/>
+					<img class="trans-image" style="width: 10em; margin-top: -0.4em;" src="img/favicons-bis/android-chrome-192x192_white.png" />
+					<p style="margin-top: -0.4em;"><a target="_blank" href="#">https://getapp.com</a></p>
+					<p style="color:#ddd;"><span style="color: #127abe">Get</span> <span style="color:#6eb246">App</span> makes road safety first is everyone’s concern, a well­rested driver is a happy driver. <br>When GetApp feels that you're getting tired, it smoothly fine­tunes cabin environment parameters that matter, temperature and music ;-) </p>
+				</section>
+
+				<section>
+					<br/>
+					<img class="trans-image" style="width: 10em; margin-top: -0.4em;" src="img/FlowChart.png" />
+					<p style="margin-top: -0.4em;"><a target="_blank" href="#">How It Works</a></p>
+					<p style="color:#ddd;">
+					<ol>
+						<li class="fragment"><div class="listsmall"> Install <span style="color: #6eb246">Get</span> <span style="color:#127abe">App</span> ;</div></li>
+						<li class="fragment"><div class="listsmall">Sync with the cabin sensors (<span style="color: #6eb246">temperature T</span>, <span style="color: #6eb246">brake</span>, <span style="color: #6eb246">speedometer</span>) and the radio player;</div></li>
+						<li class="fragment"><div class="listsmall"> One or a combination of the measures going <span style="color: #6eb246">above or below the threshold</span> <br>leads to <span style="color: #6eb246">adjusting the T &amp; turning music on </span>; </div>
+						</li>
+					</ol>
+				</section>
+
+				<section>
+					<h3 href="#">Our Solution &amp; Revenue Model </h3>
+					<ul>
+						<li class="fragment"><span style="color:#6eb246;">SaaS </span>- to users<br> freemium &amp; Premium</li>
+						<br>
+						<li class="fragment"><span style="color:#6eb246;"> SaaS</span> + possibility of hardwares (domotic) <br> at mid to long term</li>
+					</ul>
+				</section>
+
+				<section>
+					<h3 href="#">Our Unique Value Proposition </h3>
+					<ul>
+						<li class="fragment"><span style="color:#6eb246;">Peace </span> of mind <br>for drivers, safety for all.
+						</li>
+					</ul>
+				</section>
+
+				<section>
+					<h3>Our marketing target</h3>
+					<ul>
+					<ul>
+						<li class="fragment"><span style="color:#6eb246;"> 10 - 30 %</span> of the drivers involved in crashes in Europe due to drowsy driving</li>
+						<li class="fragment">But everyone is welcomed to  <span style="color:#6eb246;"> test and enjoy </span>
+						</li>
+					</ul>
+				</section>
+
+				<section>
+					<section>
+						<h2>The Team</h2>
+						<p></p>
+					</section>
+					<section>
+						<h3>Eugène Désiré NZENGOU</h3>
+						<img src="img/Dez.png">
+							<p class="fragment">
+								<strong>Engineer | Data enthusiast</strong>
+								<pre class="fullwidth fragment"><code>ex-Google &amp; early-stage Entrepreneur</code></pre>
+							</p>
+					</section>
+					<section>
+						<h2>Isaac Durá</h2>
+						<img src="img/isaac.png">
+							<p class="fragment">
+								<strong>Java BackendDeveloper | Entrepreneur</strong>
+								<pre class="fullwidth fragment"><code>Entrepreneur at Virtual Environment Coworking</code></pre>
+							</p>
+					</section>
+					<section>
+						<h2>Mohammad Zohaib Khan</h2>
+						<img src="img/moha.png">
+							<p class="fragment">
+								<strong>Business Intelligence Specialist  </strong>
+								<pre class="fullwidth fragment"><code>Database Systems magician</code></pre>
+							</p>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h3>Get GetApp <span style="color:#6eb246;">EVERYWHERE</span></h3>
+						<img src="img/getapp-everywhere.jpg">
+						<p>(But for now, only on)</p>
+					</section>
+					<section>
+						<h3>Web</h3>
+						<img src="img/getapp-web.jpg">
+						<p></p>
+					</section>
+
+					<section>
+						<h2>BETA ionic app</h2>
+						<img src="img/getapp-mobile-app.png">
+					</section>
+
+				<section>
+					<section>
+						<h3>Behind the curtain... <span style="color:#6eb246;">Java code</span></h3>
+						<img src="img/java-code_samples.png" alt="https://drive.google.com/open?id=0B27h2BZXrfSgZWQ3X215djdta2s">
+						<p>Triggers a song when speed out of a pre-defined range </p>
+								<pre class="fullwidth fragment"><code>source: <a href="https://github.com/IDuraGit/GetApp_TECHFEST_Challenge.git"></a></code></pre>
+					</section>
+				</section>
+
+				<section>
+					<h3>Now We Have</h3>
+					<ul>
+						<li><code><span style="color: #127abe">Ionic app</span> developed locally deployed to cloud server</code>
+						</li>
+						<li><code><span style="color: #127abe">Java code </span>samples that trigers playing music, regulating the inside temperature or sending push-notifications to the central when an incident occurs</code>
+						</li>
+					</ul>
+				</section>
+
+				<section>
+					<h3>We Need</h3>
+					<ul>
+						<li> <code>connection between the <span style="color: #127abe">backend</span> (java code that reacts to parameters changes) with the music player interface controlled by the (angular js) frontend code</code>
+						</li>
+					</ul>
+				</section>
+
+					<section>
+						<h3>We Need</h3>
+						<p><span style="color: #127abe">Market Research</span></p>
+						<ul>
+							<li><code>Research existing Technologies and devices for drowsiness </code></li>
+							<li><code>Perform Surveys to get user response to device </code>
+							</li>
+						</ul>
+						</p>
+					</section>
+
+					<section>
+						<h3>We Need</h3>
+						<ul>
+
+						<li><span style="color: #127abe">Perform Budget forecasting</span>
+						</li>
+						<li><span style="color: #127abe">Develop a Business Plan</span>
+						</li>
+						<li><span style="color: #127abe">Design</span>
+						</li>
+						<li><span style="color: #127abe">Implementation</span>
+						</li>
+
+						</ul>
+
+					</section>
+
+					<section>
+						<h3>Let's Try GetApp</h3>
+						<br>
+						<p> Now !
+						<br> <a ref="http://getapp-mobile-app.azurewebsites.net/#/tab/home">http://getapp-mobile-app.azurewebsites.net/#/tab/home</a>
+						<br/> 
+						<p> &amp; Access the online presentation
+						<br>  
+						<a ref="http://getapp-preso.azurewebsites.net/">http://getapp-preso.azurewebsites.net/</a>
+						</p>
+					</section>
+
+				<section>
+					<h3>THANK YOU!</h3>
+				</section>
+			</div>
 		</div>
 		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.min.js"></script>
-
+		<script src="js/reveal.js"></script>
 		<script>
 
-			// Full list of configuration options available here:
+			// Full list of configuration options available at:
 			// https://github.com/hakimel/reveal.js#configuration
 			Reveal.initialize({
 				controls: true,
 				progress: true,
 				history: true,
+				center: true,
 
-				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/none
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
 
-				// Optional libraries used to extend on reveal.js
+				// Optional reveal.js plugins
 				dependencies: [
-					{ src: 'lib/js/highlight.js', async: true, callback: function() { window.hljs.initHighlightingOnLoad(); } },
 					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-					{ src: 'lib/js/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'lib/js/data-markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
 				]
 			});
+
 		</script>
+
 		<style>
 		#comp{
 			position:fixed;
@@ -258,8 +318,11 @@
 			opacity:0.1;
 		}
 		</style>
+
 		<div id="disp"><canvas id="comp"></canvas></div>
 		<video id="video" autoplay width="300" style="display:none"></video>
 		<canvas id="canvas" style="width:300px;display:none;"></canvas>
-		<script src="js/gesture.js"></script>	</body>
+		<script src="js/gesture.js"></script>	
+        
+        </body>
 </html>
