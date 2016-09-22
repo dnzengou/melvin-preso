@@ -1,4 +1,6 @@
-# What's new in my fork
+## Words from the author
+
+# [ What's new in my fork
 
 This is what I got when I combined webcam-based gesture recognition with Hakim El Hattab's reveal.js.
 It took me a while to write and fine tune the detection algorithms. Even then, the algorithms are only about 80% accurate. You get the gist of it though: 
@@ -246,4 +248,4 @@ You can change the appearance of the speaker notes by editing the file at `plugi
 
 MIT licensed
 
-Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
+Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se ]
