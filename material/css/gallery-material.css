@@ -1,0 +1,99 @@
+.fa-2x {
+	margin-right: 1.5rem;
+}
+
+.card-action .fa-2x {
+	margin-right: 0.5rem;
+	vertical-align: middle;
+}
+
+.card-action .public {
+	font-size: 0.7rem;
+	color: #444 !important;
+}
+
+
+
+.gallery-button {
+	position: relative;
+	top: -20px;
+	right: -76px;
+}
+
+.gallery-booklet-title {
+	font-family: Lato, Roboto, Helvetica, sans-serif;
+	font-weight: 600;
+	text-align: left;
+}
+
+.material-icons {
+	vertical-align: middle;
+	font-size: 1rem;
+}
+
+.lato {
+	font-family: Lato, Roboto, Helvetica, sans-serif;
+	font-weight: 600;
+}
+
+.lato-page {
+	font-family: Lato, Roboto, Helvetica, sans-serif;
+	font-weight: 800;
+}
+
+.btn-floating-icon {
+	height: 28px;
+	width: 28px;
+	line-height: 28px;
+}
+
+.btn-floating-icon i {
+	line-height: 28px;
+}
+
+.side-nav a {
+	display: inline-block;
+	color: #ff9800;
+	height: 36px;
+	line-height: 36px;
+	padding: 0;
+}
+
+.side-nav p {
+	margin-bottom: 0;
+}
+
+ul.side-nav {
+	padding-top: 0;
+}
+
+.icon-editbar {
+	font-size: 1.4rem;
+}	
+.collapsible-body {
+	padding: 1rem 1rem 2rem;
+	padding-bottom: 20px !important;
+}
+
+.collapsible-body p {
+	padding: 0;
+}
+
+.collapsible-body .fa {
+	vertical-align: middle;
+	padding-right: 15px;
+}
+
+.lander {
+    height: calc(100vh);
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    position: fixed;
+}
+.lander .content {
+    background: white;
+	max-width: 48px;
+	box-shadow: 3px 0px 10px rgba(68,68,68,0.4); 
+	height: 100%;
+}
